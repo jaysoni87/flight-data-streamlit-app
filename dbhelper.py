@@ -4,7 +4,7 @@ class DB:
         try:
             self.conn = mysql.connector.connect (
                 user = 'root',
-                password = 'Jaysoni@8877',
+                password = 'PASSWORD',
                 host = '127.0.0.1',
                 database = 'flights'
             )
@@ -78,6 +78,7 @@ class DB:
             date.append(item[0])
             frequency.append(item[1])
         return date, frequency
+
 
 
 
