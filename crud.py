@@ -2,7 +2,7 @@ import mysql.connector
 try:
     conn = mysql.connector.connect (
         user = 'root',
-        password = 'Jaysoni@8877',
+        password = 'PASSWORD',
         host = '127.0.0.1',
         database = 'indigo'
     )
@@ -49,4 +49,5 @@ except:
 cursor.execute("""
 DELETE FROM airport WHERE airport_id = 3
 """)
+
 conn.commit()
